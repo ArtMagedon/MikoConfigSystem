@@ -34,6 +34,7 @@ cat "$SSH_KEY"
 echo ""
 git config --global user.email ap20041026@yandex.ru
 git config --global user.name ArtMagedon
+git config pull.rebase false
 # Запуск ssh-agent и добавление ключа
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     echo "Запускаю ssh-agent..."
